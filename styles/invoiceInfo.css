@@ -1,0 +1,73 @@
+.form.invoiceInfo.model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: orange; */
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.form.invoiceInfo.model.active {
+    display: flex !important;
+}
+
+.form.invoiceInfo.model .formInvoiceHeader {
+    text-align: end;
+}
+
+.form.invoiceInfo.model .invoiceInfoContent {
+    /* background-color: orange; */
+    background-color: white;
+    width: 90%;
+    padding: 7%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.form.invoiceInfo.model .invoiceInfoContent .formControl {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.form.invoiceInfo.model .invoiceInfoContent .formControl label {
+    width: 30%;
+}
+.form.invoiceInfo.model .invoiceInfoContent .formControl .text {
+    flex: 1;
+}
+
+.form.invoiceInfo.model .invoiceInfoContent .formInvoiceButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form.invoiceInfo.model
+    .invoiceInfoContent
+    .formInvoiceButton
+    .btnInvoiceDelete {
+    background-color: rgb(255, 62, 62);
+    color: white;
+    flex: 1;
+}
+.form.invoiceInfo.model
+    .invoiceInfoContent
+    .formInvoiceButton
+    .btnInvoiceConfirm {
+    background-color: rgb(31, 169, 31);
+    color: white;
+    flex: 1;
+}
+.form.invoiceInfo.model
+    .invoiceInfoContent
+    .formInvoiceButton
+    .btnInvoiceClose {
+    display: none;
+}

@@ -1,0 +1,115 @@
+.formCreateModel {
+    padding: 5% 8%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.form.formCreate {
+    padding: 5% 8%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form.formCreate .formCreateHeader {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.form.formCreate .formCreateHeader .closeFormCreate {
+    color: #007aff;
+}
+
+.formCreate .resultItem .userInfo .username {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    font-size: 17px;
+}
+
+.formCreate .addInvoice.btn,
+.formCreate .addDeleteCustomer.btn,
+.formCreate .addNewCustomer.btn {
+    width: 100%;
+}
+.formCreate .resultItem .userInfo {
+    flex: 1;
+}
+
+.formCreate .resultItem .userInfo .userNote {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-line-clamp: none;
+    overflow: none;
+    text-overflow: unset;
+    -webkit-box-orient: unset;
+    color: orange;
+    opacity: unset;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.form.formCreate .addInvoice {
+    display: block;
+    text-align: center;
+}
+.form.formCreate .invoiceList {
+    overflow-y: auto;
+    height: 80%;
+}
+.form.formCreate .invoiceList .invoiceItem {
+    background-color: #e7f6f2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form.formCreate .invoiceList .invoiceItem .invoiceInfo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.form.formCreate .invoiceList .invoiceItem .invoiceInfo .invoiceNote {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    /* color: orange; */
+    opacity: 0.5;
+}
+
+.form.formCreate .invoiceList .invoiceItem .intoMoney {
+    font-size: 25px;
+}

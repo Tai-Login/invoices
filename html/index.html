@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Invoices</title>
+        <link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/search.css" />
+        <link rel="stylesheet" href="../styles/formCreate.css" />
+        <link rel="stylesheet" href="../styles/invoiceInfo.css" />
+        <link
+            rel="shortcut icon"
+            href="https://dl.hiapphere.com/data/thumb/202007/com.invoice.maker.generator_HiAppHere_com_icon.png"
+        />
+        <!-- <link
+            rel="apple-touch-icon"
+            href="http://myinvoicefinance.co.uk/wp-content/uploads/2020/01/logo-my.png"
+            color="white"
+        /> -->
+        <link
+            rel="apple-touch-icon"
+            href="https://dl.hiapphere.com/data/thumb/202007/com.invoice.maker.generator_HiAppHere_com_icon.png"
+            color="white"
+        />
+        <!-- <link
+            rel="apple-touch-icon"
+            href="https://www.invoicesimple.com/images/brand.png"
+        /> -->
+        <!-- https://dl.hiapphere.com/data/thumb/202007/com.invoice.maker.generator_HiAppHere_com_icon.png -->
+    </head>
+    <body>
+        <div id="container">
+            <div class="page searchContainer fl-ct active">
+                <div class="searchWrap">
+                    <div style="padding: 0" class="btn searchIcon">
+                        Tìm kiếm
+                    </div>
+                    <input
+                        id="searchField"
+                        type="text"
+                        class="searchField mb-10"
+                    />
+                    <button class="btn btnAddCustomer mb-10">Thêm mới</button>
+                    <div class="searchResults">
+                        <div class="mb-10">
+                            <span>Kết quả tim kiếm</span>
+                            <button
+                                id="totalResultCustomers"
+                                class="totalResult btn"
+                                style="padding: 5px 10px"
+                            ></button>
+                        </div>
+                        <ul class="resultList" style="margin-top: 10px"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="formCreateModel model">
+                <div class="form formCreate">
+                    <div class="formCreateHeader">
+                        <span class="closeFormCreate">Đóng</span>
+                        <span class="saveFormCreate" style="display: none"
+                            >Luu</span
+                        >
+                    </div>
+                    <li class="resultItem">
+                        <div class="avatar">T</div>
+                        <div class="userInfo">
+                            <input class="username" />
+                            <textarea class="userNote"> </textarea>
+                        </div>
+                    </li>
+                    <button class="addNewCustomer mb-10 btn bg-green white">
+                        Them khach hang
+                    </button>
+                    <button class="addDeleteCustomer mb-10 btn bg-rose white">
+                        Xoa khach hang
+                    </button>
+                    <button class="addInvoice mb-10 btn">Them hoa don</button>
+                    <div
+                        class="invoicesTitle mb-10"
+                        style="
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        "
+                    >
+                        <div>
+                            <span>Danh sách hóa đơn</span>
+                            <button
+                                id="totalResultInvoices"
+                                class="totalResult btn"
+                                style="padding: 5px 10px"
+                            ></button>
+                        </div>
+                        <span
+                            id="totalIntoMoney"
+                            class="blue"
+                            style="font-size: 20px"
+                        ></span>
+                    </div>
+                    <ul class="invoiceList" style="margin-top: 10px"></ul>
+                </div>
+            </div>
+            <div class="form invoiceInfo model">
+                <div class="invoiceInfoContent">
+                    <div class="formInvoiceHeader mb-10">
+                        <span class="btnInvoiceClose blue">Đóng</span>
+                    </div>
+                    <div class="formControl">
+                        <label for="invoiceId">Ma Hoa don</label>
+                        <input class="text" name="invoiceId" type="text" />
+                    </div>
+                    <div class="formControl">
+                        <label for="intoMoney">Thanh tien</label>
+                        <input class="text" name="intoMoney" type="number" />
+                    </div>
+                    <div class="formControl">
+                        <label for="invoiceCreatedAt">Ngay tao</label>
+                        <input
+                            class="text"
+                            name="invoiceCreatedAt"
+                            type="date"
+                        />
+                    </div>
+                    <div class="formControl">
+                        <label for="invoiceNote">Ghi chu</label>
+                        <textarea
+                            class="text"
+                            name="invoiceNote"
+                            class="invoiceNote"
+                        ></textarea>
+                    </div>
+                    <div class="formInvoiceButton">
+                        <button class="btn btnClose btnInvoiceClose mr-10">
+                            Dong/Huy
+                        </button>
+                        <button class="btn btnInvoiceDelete mr-10">Xoa</button>
+                        <button class="btn btnInvoiceConfirm">Luu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/domElement.js"></script>
+        <script type="module" src="../js/templates.js"></script>
+        <script type="module" src="../js/firebase.js"></script>
+        <script type="module" src="../js/event.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
